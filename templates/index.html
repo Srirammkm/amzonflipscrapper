@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flipkart web scraping</title>
+    </head>
+    <body>
+        <div>
+        <form method="POST" action="/">
+        <h2>Enter Product</h2>
+        <input type="text" name="pro">
+        <input type="submit" value="search">
+        </form>
+        </div>
+        <div style="background-color: cadetblue; color: darkblue; ">
+            <h3>Flipkart</h3>
+            {% for i in dic1 %}
+                <ol type="1">{{ i }} --- {{ dic1[i] }}</ol>
+            {% endfor %}  
+            <h3>Amazon</h3>
+            {% for i in dic2 %}
+                <ol type="1">{{ i }} --- {{ dic2[i] }}</ol>
+            {% endfor %}  
+
+        </div>
+    </body>
+</html>
