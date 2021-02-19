@@ -14,4 +14,5 @@ def product():
         dic2=find_productA(search)
     return render_template("index.html",
                             dic1=dic1,dic2=dic2)
-app.run()
+if __name__=="__main__":
+    app.run()
